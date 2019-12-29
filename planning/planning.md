@@ -27,6 +27,33 @@ A translation lookaside buffer is a memory cache that is used to reduce the time
 
 ## 2.3 File system
 
+Simple file system
+
+![File system disk layout](../images/vsfs-layout.png)
+
+- **Super block**
+
+Super block store information about file system type, how many inodes and data block in system, where does the inode table start?
+
+When start OS will read the supper block first and then initialize the file system
+
+- **Inode bitmap and data bitmap**
+
+Bitmap is used to indicate whether the coresponding object (inode or data block) is free or allocated
+
+- **INode table**
+
+Inode table tracking meta data of file such as size of file, owner, created time, access right 
+
+- **Data region**
+
+
+- **Directory**
+
+Data block of directory contain list of pair of name and the inode number of that item
+
+
+
 
 # 3. Networking
 ## 3.1 TCP
@@ -43,7 +70,7 @@ this is how TCP work
 
 
 
-# 4. Security
+# Security
 ## How https works?
 
 ## How to store password?
@@ -52,7 +79,7 @@ this is how TCP work
  - careful about sql injection
 
 
-# 5. Database
+# Database
 - Complexity of SQL queries 
 ``` 
 
@@ -66,14 +93,19 @@ this is how TCP work
 - Composite index and their implementation
 ```
 ```
-# 6. MySQL
+# MySQL
 
+# Large scale distributed system
 
+# Java
 
+- Bit manifestation
+```
+Java unsigned shift bit: >>>
+Java signed shift bit: >>
+```
 
-# 7. Large scale distributed system
-
-# 8. Behavioral question
+# Behavioral question
 
 1. Do you have any experience?
 1. When did you start programming?
@@ -87,6 +119,6 @@ this is how TCP work
 1. Why do you want to work here?
 
 
-# 9. References
+# References
 - [Interview with shopee garena](https://forthright48.com/interview-with-shopee-garena/)
 - [Operating system: the three easy pieces](http://pages.cs.wisc.edu/~remzi/OSTEP/)
