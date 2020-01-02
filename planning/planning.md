@@ -79,6 +79,10 @@ this is how TCP work
  - careful about sql injection
 
 
+## JWT
+
+- [JWT HS256 vs RS256](https://stackoverflow.com/a/39239395/2803909)
+
 # Database
 - Complexity of SQL queries 
 ``` 
