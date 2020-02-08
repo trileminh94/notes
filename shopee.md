@@ -1,5 +1,7 @@
 # Topics
 
+- reference: https://forthright48.com/interview-with-shopee-garena/
+
 ## Datastructure and algorithm
 
 ### Datastructure
@@ -102,10 +104,25 @@
 - [ ] how https works
 - [ ] how to defend DDOS
 - [ ] `cryptography`
+- [ ] ` how to store password `
+```
+Never store raw password, store hashed instead and use Bcrypt instead of md5 and careful about SQL injection
+```
 
 ### HTTPS
 
 ## Database
+
+### SQL
+
+- [Order of execution in SQL query](https://www.sisense.com/blog/sql-query-order-of-operations/)
+- LEFT JOIN
+- RIGHT JOIN
+- INNER JOIN
+- CASE WHEN
+- `Complexity of SQL query`
+
+### Concept
 - [ ] Describe database master slave process
 - [ ] ACID
 - [ ] first, second, third nomalization
@@ -114,6 +131,7 @@
 - [ ] shared lock/exclusive lock
 - [ ] isolation
 - [ ] dirty/non-repeatable reads
+- [ ] `composite index and how they was implemented`
 
 ## Software design
 - [ ] API design
@@ -129,6 +147,8 @@
 - [ ] Do you have any question? 
 - [ ] Describe the hard problem you faced and how you overcome?
 
+
+## Common phrases use to answer common question
 
 
 
