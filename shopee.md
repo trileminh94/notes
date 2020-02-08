@@ -68,13 +68,13 @@
 - given a list of number, find the first K minimum number
 
 ## Operating system
-- [ ] `process`
-- [ ] `thread`
-- [ ] `schedule process ( mutex, semaphore)`
+- [ ] `process` **[important]**
+- [ ] `thread` **[important]**
+- [ ] `schedule process ( mutex, semaphore)` **[important]**
 - [ ] schedule thread
 - [ ] context switch
 - [ ] file system
-- [ ] `virtual memory`
+- [ ] `virtual memory` **[important]**
 - [ ] `Little and big endian`
 
 ## Networking
@@ -88,13 +88,13 @@
 ### TCP
 refer https://www.homenethowto.com/
 
-- [ ] `how TCP work`
+- [ ] `how TCP work` **[important]**
 - [ ] `structure of headers`
 - [ ] `properties of connections (*)`
-- [ ] `TCP handshake`
+- [ ] `TCP handshake` **[important]**
 - [ ] TCP proxy
 - [ ] `terminate connections`
-- [ ] `TCP congestion control`
+- [ ] `TCP congestion control` **[important]**
 
 ### UDP
 - [ ] how UDP work 
@@ -117,7 +117,7 @@ Never store raw password, store hashed instead and use Bcrypt instead of md5 and
 
 ### SQL
 
-- [Order of execution in SQL query](https://www.sisense.com/blog/sql-query-order-of-operations/)
+- [Order of execution in SQL query](https://www.sisense.com/blog/sql-query-order-of-operations/) **[important]**
 - LEFT JOIN
 - RIGHT JOIN
 - INNER JOIN
@@ -128,12 +128,12 @@ Never store raw password, store hashed instead and use Bcrypt instead of md5 and
 - [ ] Describe database master slave process
 - [ ] ACID
 - [ ] first, second, third nomalization
-- [ ] explain how index in Database work
+- [ ] `explain how index in Database work` **[important]**
 - [ ] partitions database
 - [ ] shared lock/exclusive lock
 - [ ] isolation
 - [ ] dirty/non-repeatable reads
-- [ ] `composite index and how they was implemented`
+- [ ] `composite index and how they was implemented` **[important]**
 
 ## Software design
 - [ ] API design
