@@ -29,31 +29,68 @@
 - Graph
 - Hashtable
 
-### Algorithms
+#### sample question
+
+- `Please build a data structure to cache results from SQL query `
+- Binary tree traversal, inorder, iterative
+
+### Algorithms `( time complexity for each )`
+- insertion sort
+- selection sort
+- quick sort
+- merge sort
+- heap sort
 - Time and Space Complexity analysis
 
-- references: https://www.youtube.com/channel/UCNsGQ_oLlH89HoKd5uyoAEQ/videos
+- `references: https://www.youtube.com/channel/UCNsGQ_oLlH89HoKd5uyoAEQ/videos`
+
+#### sample question
+
+```
+ Step to do: 
+    1. Clarify the requirements
+    2. Do some sample 
+    3. Suggest some solution from naive to optimal
+    4. Analyze the pros, cons and complexity of each one
+    5. Choose one algorithm
+    6. Code
+    7. Run by your self
+    8. Find the way to improve performance
+```
+
+- Find k th most occured character
+- Find square root of number without built in function.
+- Implement linked list. Delete node with O(1).
+- reverse a linked list
+- verify a binary search tree
+- given a list of number, find the first K minimum number
 
 ## Operating system
-- [ ] process 
-- [ ] thread
-- [ ] schedule process ( mutex, semaphore)
+- [ ] `process`
+- [ ] `thread`
+- [ ] `schedule process ( mutex, semaphore)`
 - [ ] schedule thread
 - [ ] context switch
 - [ ] file system
-- [ ] virtual memory
+- [ ] `virtual memory`
+- [ ] `Little and big endian`
 
 ## Networking
 
 - [ ] how the intenet work
 
+### IP - internet protocol
+
+- [ ] how IP work
+
 ### TCP
-- [ ] how TCP work
-- [ ] structure of headers
-- [ ] properties of connections
-- [ ] TCP handshake
+- [ ] `how TCP work`
+- [ ] `structure of headers`
+- [ ] `properties of connections (*)`
+- [ ] `TCP handshake`
 - [ ] TCP proxy
-- [ ] terminate connections
+- [ ] `terminate connections`
+- [ ] `TCP congestion control`
 
 ### UDP
 - [ ] how UDP work 
@@ -64,18 +101,33 @@
 
 - [ ] how https works
 - [ ] how to defend DDOS
+- [ ] `cryptography`
 
 ### HTTPS
 
 ## Database
 - [ ] Describe database master slave process
+- [ ] ACID
+- [ ] first, second, third nomalization
+- [ ] explain how index in Database work
+- [ ] partitions database
+- [ ] shared lock/exclusive lock
+- [ ] isolation
+- [ ] dirty/non-repeatable reads
+
+## Software design
+- [ ] API design
 
 ## Behavieral
+- [ ] `talk about your career ( who do you want to be in the next 5 years at shopee ? )`
+- [ ] Why do you choose shopee?
+- [ ] Tell me the reason you leave your previous company
 - [ ] your expectation to work in shopee
 - [ ] tell me about project you learn the most
 - [ ] what project you do, your role and contribution
 - [ ] salary you expect (4000 SGD = 66.885.410 VND before tax)
 - [ ] Do you have any question? 
+- [ ] Describe the hard problem you faced and how you overcome?
 
 
 
