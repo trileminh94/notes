@@ -108,7 +108,8 @@ refer https://www.homenethowto.com/
 - [ ] `cryptography`
 - [ ] ` how to store password `
 ```
-Never store raw password, store hashed instead and use Bcrypt instead of md5 and careful about SQL injection
+Never store raw password, store hashed instead and use Bcrypt instead of md5
+and careful about SQL injection
 ```
 
 ### HTTPS
