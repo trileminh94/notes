@@ -12,9 +12,11 @@
 - array based datastructure parent greater than its children
 - construct: 
     + top down: add new element to array and up heap
-    + bottom up: recursive to build sub heap and then join 2 heap by a node and then down heap bubbling
+    + bottom up: recursive to build sub heap and then join 2 heap by a node 
+      and then down heap bubbling
 - heap sort: 
-    + in place heap sort: build heap in place and repeat swap the root to the last element then down heap bubbling
+    + in place heap sort: build heap in place and repeat swap the root to 
+      the last element then down heap bubbling
 ```
 
 - Binary tree
