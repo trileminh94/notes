@@ -86,6 +86,8 @@
 - [ ] how IP work
 
 ### TCP
+refer https://www.homenethowto.com/
+
 - [ ] `how TCP work`
 - [ ] `structure of headers`
 - [ ] `properties of connections (*)`
@@ -146,6 +148,16 @@ Never store raw password, store hashed instead and use Bcrypt instead of md5 and
 - [ ] salary you expect (4000 SGD = 66.885.410 VND before tax)
 - [ ] Do you have any question? 
 - [ ] Describe the hard problem you faced and how you overcome?
+- [ ] Do I have any experience?
+- [ ] When did I start programming?
+- [ ] Did I ever interview at any other company? I told him about Google and WAP.
+- [ ] What will I do if Google suddenly asks me to join them? Will I leave Garena?
+- [ ] What is my opinion about overtime work?
+- [ ] What is my opinion about meetings?
+- [ ] What is my expected salary?
+- [ ] What is my opinion about the interview process?
+- [ ] Do I know what Garena does?
+- [ ] Why do I want to work here?
 
 
 ## Common phrases use to answer common question
