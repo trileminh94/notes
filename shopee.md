@@ -114,6 +114,9 @@ and careful about SQL injection
 
 ### HTTPS
 
+- [ ] `how https works` **[important]**
+- [ ] `SSL/TLS handshake` **[important]**
+
 ## Database
 
 ### SQL
