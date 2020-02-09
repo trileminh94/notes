@@ -77,6 +77,9 @@ move the seperator to the right one step
 1. recursion
 2. store (memoize)
 3. bottom-up
+
+time comlexity is O(M * N)
+space complexity can be O(M * N) or O(M) if we use a single demension array instead of 2 demension arrays
 ```
 - Time and Space Complexity analysis
 
@@ -127,10 +130,18 @@ refer https://www.homenethowto.com/
 - [ ] `how TCP work` **[important]**
 - [ ] `structure of headers`
 - [ ] `properties of connections (*)`
+```
+TCP connection is not in the intermediate network element, it is only in the two end systems
+TCP connection is full-duplex connection. Data send back and ford on the same connections.
+TCP connection is point to point connection, not multiple cast.
+```
+
+
 - [ ] `TCP handshake` **[important]**
 ```
 1. they must send some preliminary
 ```
+
 - [ ] TCP proxy
 - [ ] `terminate connections`
 - [ ] `TCP congestion control` **[important]**
@@ -225,6 +236,10 @@ This index is call composite index
 9. Similary, this will be ..... , this will be ...... , ....  ( dung de noi tuong tu cho nhung gia tri khac thi co ket qua)
 10. Basicly, Fundamentaly
 11. Let's introduce 2 to the picture ( truong hop dynamic programming, xet toi dong tiep theo)
-
-
+12. 4 can be represented as 4 it self or 3 + 1 or 2 + 2 or 2 + 1 + 1 or the addition of 4 number 1 
+13. Number of way to represent an integer number as addition of positive integers
+14. If I have the ammount of 5 and I need to make change for. If I only have 1 2 5 coins, how many unique ways to do that?
+15. If the total is zero then no matter how many coins you gave me, I am going to be able to make changes 1 way which is nothing.
+16. I subtract one from here and I go here
+17. There are 4 ways to make change for 5 given the coins 1 2 and 5
 
