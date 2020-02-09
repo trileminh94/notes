@@ -37,8 +37,37 @@
 - Binary tree traversal, inorder, iterative
 
 ### Algorithms `( time complexity for each )`
+- bubble sort ( useful to find K largest or smallest element - modify to make outer loop run only k time)
+```
+for (i = n-1; i > 0; i--) {
+    for (j = 0; j < i; j++) {
+        if (arr[j] < arr[j+1]>) {
+            swap
+        }
+    }
+}
+```
 - insertion sort
+```
+
+for (i = 0; j < n; i++) {
+    val = arr[i]
+    for (j = i-1; j > 0; j--) {
+        if arr[j] > val {
+            arr[j+1] = arr[j]
+        } else {
+            arr[j+1] = val
+            break;
+        }
+    }
+}
+```
 - selection sort
+```
+seperate array into 2 part: sorted and unsorted
+loop n time, each time find the smallest element in the unsorted part and then
+move the seperator to the right one step
+```
 - quick sort
 - merge sort
 - heap sort
@@ -137,7 +166,12 @@ and careful about SQL injection
 - [ ] shared lock/exclusive lock
 - [ ] isolation
 - [ ] dirty/non-repeatable reads
+- [ ] `clustered index, primary index, unique index` ***[important]**
 - [ ] `composite index and how they was implemented` **[important]**
+```
+MySQL allow you to create index on multiple columns, up to 16 columns. 
+This index is call composite index
+```
 
 ## Software design
 - [ ] API design
@@ -165,6 +199,9 @@ and careful about SQL injection
 
 
 ## Common phrases use to answer common question
+
+1. Index will benefit your query
+2. You can analyze different use cases of your sytem and try to come up with the order of columns that benefit most of your use cases.     
 
 
 
