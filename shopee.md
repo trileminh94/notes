@@ -71,6 +71,13 @@ move the seperator to the right one step
 - quick sort
 - merge sort
 - heap sort
+- device and conquer
+- `dynamic programming` **[important]**
+```
+1. recursion
+2. store (memoize)
+3. bottom-up
+```
 - Time and Space Complexity analysis
 
 - `references: https://www.youtube.com/channel/UCNsGQ_oLlH89HoKd5uyoAEQ/videos`
@@ -121,6 +128,9 @@ refer https://www.homenethowto.com/
 - [ ] `structure of headers`
 - [ ] `properties of connections (*)`
 - [ ] `TCP handshake` **[important]**
+```
+1. they must send some preliminary
+```
 - [ ] TCP proxy
 - [ ] `terminate connections`
 - [ ] `TCP congestion control` **[important]**
@@ -147,6 +157,10 @@ and careful about SQL injection
 - [ ] `SSL/TLS handshake` **[important]**
 
 ## Database
+
+### Indexing
+
+- [] https://www.freecodecamp.org/news/database-indexing-at-a-glance-bb50809d48bd/
 
 ### SQL
 
@@ -201,7 +215,16 @@ This index is call composite index
 ## Common phrases use to answer common question
 
 1. Index will benefit your query
-2. You can analyze different use cases of your sytem and try to come up with the order of columns that benefit most of your use cases.     
+2. You can analyze different use cases of your sytem and try to come up with the order of columns that benefit most of your use cases.
+3. If you create an index in col1 and composite index in col1, col2 then only the composite index should be fine. Col1 alone can be serve by composite index itself since it's a left side prefix  of the index.   
+4. Odd: lẻ - even : chẵn
+5. perform such action any number of time
+6. `In the first iteration` 
+7. Coin denomination : menh gia dong xu
+8. How many different ways you can get this value if you only have ..... ? 
+9. Similary, this will be ..... , this will be ...... , ....  ( dung de noi tuong tu cho nhung gia tri khac thi co ket qua)
+10. Basicly, Fundamentaly
+11. Let's introduce 2 to the picture ( truong hop dynamic programming, xet toi dong tiep theo)
 
 
 
