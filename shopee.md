@@ -125,7 +125,9 @@ space complexity can be O(M * N) or O(M) if we use a single demension array inst
 - [ ] how IP work
 
 ### TCP
-refer https://www.homenethowto.com/
+refer 
+1. https://www.homenethowto.com/
+2. [TCP](./networking/transport_layer/tcp.md)
 
 - [ ] `how TCP work` **[important]**
 - [ ] `structure of headers`
@@ -137,9 +139,22 @@ TCP connection is point to point connection, not multiple cast.
 ```
 
 
-- [ ] `TCP handshake` **[important]**
+- [ ] `TCP handshake - three-way handshake` **[important]**
 ```
 1. they must send some preliminary
+```
+
+- [ ] `Sending data process`
+```
+Client process pass a stream of data through the socket.
+Once data pass through the socket, TCP will direct that data stream to the
+connection's send buffer. 
+TCP will grab chunks of data from the send buffer and pass data to the network layer. 
+MSS - maximum segment size
+MSS was set by first determining the length of the largest link-layer (MTU maximum transmission unit)
+
+TCP grab each chunk of client data with TCP header to form TCP segment and pass down to the network layer. 
+Network layer will seperate and ecapsulate TCP segment to IP Datagram.
 ```
 
 - [ ] TCP proxy
