@@ -42,12 +42,13 @@ Perhaps the most obvious question is the length of the timeout intervals. Clearl
 ### Estimating the Round-Trip Time
 
 - The sample RTT, denoted SampleRTT, for a segment is the amount of time between when the segment is sent (that is, passed to IP) and when an acknowledg- ment for the segment is received.
-- Instead of measuring a SampleRTT for every transmitted segment, most TCP implementations take only one SampleRTT meas- urement at a time. That is, at any point in time, the SampleRTT is being estimated for only one of the transmitted but currently unacknowledged segments, leading to a new value of SampleRTT approximately once every RTT.
+- Instead of measuring a SampleRTT for every transmitted segment, most TCP implementations take only one SampleRTT measurement at a time. That is, at any point in time, the SampleRTT is being estimated for only one of the transmitted but currently unacknowledged segments, leading to a new value of SampleRTT approximately once every RTT.
 - Also, TCP never com- putes a SampleRTT for a segment that has been retransmitted; it only measures SampleRTT for segments that have been transmitted once. Why?
 - Obviously, the SampleRTT values will fluctuate from segment to segment due to congestion in the routers and to the varying load on the end systems. Because of this fluctuation, any given SampleRTT value may be atypical. In order to estimate a typical RTT, it is therefore natural to take some sort of average of the Sam- pleRTT values.
-  - TCP maintains an average, called EstimatedRTT, of the Sam- pleRTT values.
-  - Upon obtaining a new SampleRTT, TCP updates EstimatedRTT according to the following formula: $EstimaedRTT = (1-\alpha) \cdot EstimatedRTT + \alpha \cdot SampleRTT$
-  - The recommended value of 􏰂$\alpha$ is 􏰂$\frac{1}{8} = 0.125$.
+  - TCP maintains an average, called EstimatedRTT, of the SampleRTT values.
+  - Upon obtaining a new SampleRTT, TCP updates EstimatedRTT according to the following formula: 
+        `EstimaedRTT = (1- alpha) . EstimatedRTT + alpha . SampleRTT`
+  - The recommended value of alpha is 0.125
   - Note that EstimatedRTT is a weighted average of the SampleRTT values.
   - In statistics, such an average is called an **exponential weighted moving average (EWMA)**.
 - In addition to having an estimate of the RTT, it is also valuable to have a measure of the variability of the RTT.

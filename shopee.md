@@ -160,6 +160,9 @@ Network layer will seperate and ecapsulate TCP segment to IP Datagram.
 - [ ] TCP proxy
 - [ ] `terminate connections`
 - [ ] `TCP congestion control` **[important]**
+- [ ] `TCP flow control` **[important]**
+- [ ] `TCP timer, TCP timeout and retransmition` **[important]**
+- [ ] `Estimate the right round-trip time (RTT)` 
 
 ### UDP
 - [ ] how UDP work 
@@ -183,6 +186,7 @@ and careful about SQL injection
 - [ ] `SSL/TLS handshake` **[important]**
 - [ ] `certificate authority chain` **[important]**
 - [ ] `how certificate was issue` **[important]**
+- [ ] [What happend under the hood when you type google.com in your browser](https://stackoverflow.com/a/42154314/2803909)
 
 ### HTTP2
 
@@ -263,4 +267,5 @@ This index is call composite index
 15. If the total is zero then no matter how many coins you gave me, I am going to be able to make changes 1 way which is nothing.
 16. I subtract one from here and I go here
 17. There are 4 ways to make change for 5 given the coins 1 2 and 5
+18. `This is accomplished as follows` - no duoc thuc hien nhu sau
 
