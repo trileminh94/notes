@@ -181,6 +181,12 @@ and careful about SQL injection
 
 - [ ] `how https works` **[important]**
 - [ ] `SSL/TLS handshake` **[important]**
+- [ ] `certificate authority chain` **[important]**
+- [ ] `how certificate was issue` **[important]**
+
+### HTTP2
+
+- [ ] `what is http2?` **[important]**
 
 ## Database
 
