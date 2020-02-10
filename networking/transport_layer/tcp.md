@@ -71,7 +71,7 @@ Perhaps the most obvious question is the length of the timeout intervals. Clearl
 
 ## Reliable Data Transfer
 
-In our earlier development of reliable data transfer techniques, it was conceptu- ally easiest to assume that an individual timer is associated with each transmitted but not yet acknowledged segment. While this is great in theory, timer management can require considerable overhead. Thus, the recommended TCP timer management procedures use only a single retransmission timer, even if there are mul- tiple transmitted but not yet acknowledged segments.
+In our earlier development of reliable data transfer techniques, it was conceptually easiest to assume that an individual timer is associated with each transmitted but not yet acknowledged segment. While this is great in theory, timer management can require considerable overhead. Thus, the recommended TCP timer management procedures use only a single retransmission timer, even if there are multiple transmitted but not yet acknowledged segments.
 
 > What is the difference between TCP and GBN?
 

@@ -123,6 +123,14 @@ space complexity can be O(M * N) or O(M) if we use a single demension array inst
 ### IP - internet protocol
 
 - [ ] how IP work
+- [ ] properties of IP protocol
+
+```
+1. Best effort service
+2. Unreliable
+3. do not garantee datagram delivery
+4. do not garantee the integrity of datagram
+```
 
 ### TCP
 refer 
@@ -183,7 +191,7 @@ and careful about SQL injection
 ### HTTPS
 
 - [ ] `how https works` **[important]**
-- [ ] `SSL/TLS handshake` **[important]**
+- [ ] `explain SSL/TLS handshake` **[important]**
 - [ ] `certificate authority chain` **[important]**
 - [ ] `how certificate was issue` **[important]**
 - [ ] [What happend under the hood when you type google.com in your browser](https://stackoverflow.com/a/42154314/2803909)
