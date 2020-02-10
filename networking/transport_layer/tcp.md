@@ -48,24 +48,24 @@ Perhaps the most obvious question is the length of the timeout intervals. Clearl
   - TCP maintains an average, called EstimatedRTT, of the SampleRTT values.
   - Upon obtaining a new SampleRTT, TCP updates EstimatedRTT according to the following formula: 
         `EstimaedRTT = (1- alpha) . EstimatedRTT + alpha . SampleRTT`
-  - The recommended value of alpha is 0.125
+  - `The recommended value of alpha is 0.125`
   - Note that EstimatedRTT is a weighted average of the SampleRTT values.
   - In statistics, such an average is called an **exponential weighted moving average (EWMA)**.
 - In addition to having an estimate of the RTT, it is also valuable to have a measure of the variability of the RTT.
     - DevRTT, as an estimate of how much SampleRTT typically deviates from EstimatedRTT.
-    - $DevRTT = (1 - \beta) \cdot DevRTT + \beta \cdot | SampleRTT - EstimatedRTT |$
+    - `DevRTT = (1 - beta) . DevRTT + beta . |SampleRTT - EstimatedRTT|`
     - Note that DevRTT is an EWMA of the difference between SampleRTT and EstimatedRTT. If the SampleRTT values have little fluctuation, then DevRTT will be small; on the other hand, if there is a lot of fluctuation, DevRTT will be large.
-    - The recommended value of β is 0.25.
+    - `The recommended value of β is 0.25.`
 
 ### Setting and Managing the Retransmission Timeout Interval
 
 > Given values of EstimatedRTT and DevRTT, what value should be used for TCP’s timeout interval?
 
-- Clearly, the interval should be greater than or equal to EstimatedRTT, or unnecessary retransmissions would be sent. But the timeout interval should not be too much larger than EstimatedRTT; otherwise, when a seg- ment is lost, TCP would not quickly retransmit the segment, leading to large data transfer delays.
+- Clearly, the interval should be greater than or equal to EstimatedRTT, or unnecessary retransmissions would be sent. But the timeout interval should not be too much larger than EstimatedRTT; otherwise, when a segment is lost, TCP would not quickly retransmit the segment, leading to large data transfer delays.
 - It is therefore desirable to set the timeout equal to the EstimatedRTT plus some margin.
 - The margin should be large when there is a lot of fluctuation in the SampleRTT values; it should be small when there is little fluctuation. The value of DevRTT should thus come into play here.
-- $TimeoutInterval = EstimatedRTT + 4 \cdot DevRTT$
-- An initial TimeoutInterval value of 1 second is recommended.
+- `TimeoutInterval = EstimatedRTT + 4 . DevRTT`
+- `An initial TimeoutInterval value of 1 second is recommended.`
 - Also, when a timeout occurs, the value of TimeoutInterval is doubled to avoid a premature timeout occurring for a subsequent segment that will soon be acknowledged.
 - However, as soon as a segment is received and EstimatedRTT is updated, the TimeoutInterval is again computed using the formula above.
 
