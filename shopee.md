@@ -182,6 +182,8 @@ Network layer will seperate and ecapsulate TCP segment to IP Datagram.
 - [ ] how https works
 - [ ] how to defend DDOS
 - [ ] `cryptography`
+- [ ] `What is RSA algorithm?`
+- [ ] `Symetric and asymetric cryptography algorithm`
 - [ ] ` how to store password `
 ```
 Never store raw password, store hashed instead and use Bcrypt instead of md5
