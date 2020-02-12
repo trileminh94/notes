@@ -200,14 +200,18 @@ Network layer will seperate and ecapsulate TCP segment to IP Datagram.
 
 - [ ] how https works
 - [ ] how to defend DDOS
-- [ ] `cryptography`
-- [ ] `What is RSA algorithm?`
-- [ ] `Symetric and asymetric cryptography algorithm`
-- [ ] ` how to store password `
-```
-Never store raw password, store hashed instead and use Bcrypt instead of md5
-and careful about SQL injection
-```
+### Cryptography
+
+> `How to store password in database?`
+
+Store hash instead of raw password, don't use MD5, use Bcrypt. Careful about SQL injection.
+
+> `What is RSA algorithm?`
+> `What is AES algorithm?`
+> `Symetric and asymetric cryptography algorithm`
+> `List out some symetric cryptography algorithms`
+> `List out some asymetric cryptography algorithms`
+
 
 ### HTTPS
 
