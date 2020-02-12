@@ -156,23 +156,23 @@ refer
 1. https://www.homenethowto.com/
 2. [TCP](./networking/transport_layer/tcp.md)
 
-- [ ] `how TCP work` **[important]**
-- [ ] `structure of headers`
-- [ ] `properties of connections (*)`
-```
+> `how TCP work` **[important]**
+> `structure of headers`
+> `properties of connections (*)`
+
 TCP connection is not in the intermediate network element, it is only in the two end systems
 TCP connection is full-duplex connection. Data send back and ford on the same connections.
 TCP connection is point to point connection, not multiple cast.
-```
 
 
-- [ ] `TCP handshake - three-way handshake` **[important]**
-```
+
+> `TCP handshake - three-way handshake` **[important]**
+
 1. they must send some preliminary
-```
 
-- [ ] `Sending data process`
-```
+
+> `Sending data process`
+
 Client process pass a stream of data through the socket.
 Once data pass through the socket, TCP will direct that data stream to the
 connection's send buffer. 
@@ -182,7 +182,7 @@ MSS was set by first determining the length of the largest link-layer (MTU maxim
 
 TCP grab each chunk of client data with TCP header to form TCP segment and pass down to the network layer. 
 Network layer will seperate and ecapsulate TCP segment to IP Datagram.
-```
+
 
 - [ ] TCP proxy
 - [ ] `terminate connections`
@@ -341,4 +341,5 @@ This index is call composite index
 17. There are 4 ways to make change for 5 given the coins 1 2 and 5
 18. `This is accomplished as follows` - no duoc thuc hien nhu sau
 19. This is but one simple example of how to correct a violation of this principle, however, this situation can manifest in a broad variety of ways, and is not always easy to identify.
+20. **Either of the two processes participating in a tcp connection can end the connection.**
 
