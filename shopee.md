@@ -1,5 +1,14 @@
 # table of contents
 1. [Datastructure and algorithm](#Datastructure-and-algorithm)
+2. [Operating system](#Operating-system)
+3. [Networking](#Networking)
+4. [Web security](#Web-security)
+5. [Technology](#Technology)
+6. [OOP](#OOP)
+7. [Database](#Database)
+8. [Software design](#Software-design)
+9. [Behavieral](#Behavieral)
+10. [Common phrases use to answer common question](#Common-phrases-use-to-answer-common-question)
 
 # Topics
 - reference: https://forthright48.com/interview-with-shopee-garena/
