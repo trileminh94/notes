@@ -210,6 +210,11 @@ and careful about SQL injection
 
 - [ ] `Describe k8s components ?` **[important]**
 
+## OOP
+
+-[ ] `Explain SOLID ` **[important]** 
+
+
 ## Database
 
 ### Indexing
@@ -227,7 +232,7 @@ and careful about SQL injection
 
 ### Concept
 - [ ] Describe database master slave process
-- [ ] ACID
+- [ ] `Describe ACID` **[important]**
 - [ ] first, second, third nomalization
 - [ ] `explain how index in Database work` **[important]**
 - [ ] partitions database
