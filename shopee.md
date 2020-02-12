@@ -233,7 +233,7 @@ and careful about SQL injection
 
 ## OOP
 
--[ ] `Explain SOLID ` **[important]**  [ref](https://itnext.io/solid-principles-explanation-and-examples-715b975dcad4)
+-[ ] [Explain SOLID ](https://itnext.io/solid-principles-explanation-and-examples-715b975dcad4) **[important]**
 
 S: Single responsibility
 
