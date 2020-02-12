@@ -222,10 +222,14 @@ and careful about SQL injection
 
 ## OOP
 
--[ ] `Explain SOLID ` **[important]** 
+-[ ] `Explain SOLID ` **[important]**  [ref](https://itnext.io/solid-principles-explanation-and-examples-715b975dcad4)
 
 
 ## Database
+
+### order of execution
+
+- https://www.sisense.com/blog/sql-query-order-of-operations/
 
 ### Indexing
 
