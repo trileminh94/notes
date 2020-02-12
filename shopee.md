@@ -1,3 +1,6 @@
+# table of contents
+1. [Datastructure and algorithm](#Datastructure-and-algorithm)
+
 # Topics
 - reference: https://forthright48.com/interview-with-shopee-garena/
 
