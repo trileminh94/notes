@@ -243,9 +243,9 @@ O: Open close principles - open for extension and close for modification
 L: Liskov substitution principle - replace instance of parent type by 
 instance of child type without altering `the correctness of the program`
 I: Interface segregation principle - no client should be forced to depend on methods it does not use.
-D: Dependency inversion - 
+D: Dependency inversion - High level should not depend on low level modules. Both depend on abstractions, Abstractions should not depend on details. Details should depend on abstractions.
 
-`Violate SOLID principle of cause program hard to extend or easily to run wrong`
+`By applying these SOLID principles, we get to benefit from a reusable, maintainable, scalable and easy testable codebase.`
 
 
 ## Database
