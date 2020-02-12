@@ -209,7 +209,10 @@ Store hash instead of raw password, don't use MD5, use Bcrypt. Careful about SQL
 
 > `What is RSA algorithm?`
 > `What is AES algorithm?`
-> `Symetric and asymetric cryptography algorithm`
+> `Symetric vs asymetric cryptography algorithm`
+
+1.[Ref](https://www.ssl2buy.com/wiki/symmetric-vs-asymmetric-encryption-what-are-differences)
+
 > `List out some symetric cryptography algorithms`
 > `List out some asymetric cryptography algorithms`
 > `What is public key cryptography?`
@@ -218,10 +221,10 @@ Store hash instead of raw password, don't use MD5, use Bcrypt. Careful about SQL
 
 ### HTTPS
 
-- [ ] `how https works` **[important]**
-- [ ] `explain SSL/TLS handshake` **[important]**
-- [ ] `certificate authority chain` **[important]**
-- [ ] `how certificate was issue` **[important]**
+- [ ] `How https works ?` **[important]**
+- [ ] `Describe SSL/TLS handshake` **[important]**
+- [ ] `Explain how certificate authority chain work?` **[important]**
+- [ ] `how certificate was issue ?` **[important]**
 - [ ] [What happend under the hood when you type google.com in your browser](https://stackoverflow.com/a/42154314/2803909)
 
 ### HTTP2
