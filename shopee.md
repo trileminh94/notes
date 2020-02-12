@@ -1,9 +1,3 @@
-# Table of Contents
-1. [Datastructure and algorithm](#Datastructure-and-algorithm)
-<!-- 2. [Example2](#example2)
-3. [Third Example](#third-example)
-4. [Fourth Example](#fourth-examplehttpwwwfourthexamplecom) -->
-
 # Topics
 - reference: https://forthright48.com/interview-with-shopee-garena/
 
@@ -228,16 +222,13 @@ and careful about SQL injection
 ## OOP
 
 -[ ] `Explain SOLID ` **[important]**  [ref](https://itnext.io/solid-principles-explanation-and-examples-715b975dcad4)
-```
+
 S: Single responsibility
 
 O: Open close principles - open for extension and close for modification
 
 L: Liskov substitution principle - replace instance of parent type by 
-instance of child type without altering the correctness of the program
-
-
-```
+instance of child type without altering `the correctness of the program`
 
 Violate SOLID principle of cause program hard to extend
 
