@@ -202,6 +202,8 @@ and careful about SQL injection
 
 - [ ] `what is http2?` **[important]**
 
+## Technology
+
 ### GRPC
 
 - [ ] `How do you use GRPC?` **[important]**
@@ -209,6 +211,14 @@ and careful about SQL injection
 ### Kubernetes
 
 - [ ] `Describe k8s components ?` **[important]**
+
+### Kafka
+
+- [ ] `Explain kafka ?` **[important]**
+
+### NIO
+
+- [ ] `What is NIO and event loop?` **[important]**
 
 ## OOP
 
