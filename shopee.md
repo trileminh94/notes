@@ -202,6 +202,14 @@ and careful about SQL injection
 
 - [ ] `what is http2?` **[important]**
 
+### GRPC
+
+- [ ] `How do you use GRPC?` **[important]**
+
+### Kubernetes
+
+- [ ] `Describe k8s components ?` **[important]**
+
 ## Database
 
 ### Indexing
