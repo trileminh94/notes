@@ -118,14 +118,22 @@ space complexity can be O(M * N) or O(M) if we use a single demension array inst
 - given a list of number, find the first K minimum number
 
 ## Operating system
+
+### Process
 - [ ] `process` **[important]**
-- [ ] `thread` **[important]**
 - [ ] `schedule process ( mutex, semaphore)` **[important]**
+
+### Thread
+- [ ] `thread` **[important]**
 - [ ] schedule thread
 - [ ] context switch
-- [ ] file system
+
+### Memory management
 - [ ] `virtual memory` **[important]**
 - [ ] `Little and big endian`
+
+### File system
+- [ ] file system
 
 ## Networking
 
@@ -263,7 +271,7 @@ D: Dependency inversion - High level should not depend on low level modules. Bot
 - [] https://www.freecodecamp.org/news/database-indexing-at-a-glance-bb50809d48bd/
 
 ### SQL
-
+- [SQL](./database/sql.md)
 - [Order of execution in SQL query](https://www.sisense.com/blog/sql-query-order-of-operations/) **[important]**
 - LEFT JOIN
 - RIGHT JOIN
