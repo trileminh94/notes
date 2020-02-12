@@ -215,9 +215,12 @@ and careful about SQL injection
 
 ## Technology
 
-### GRPC
+### GRPC and thrift protocol
 
 - [ ] `How do you use GRPC?` **[important]**
+- [ ] `Load balance`
+- [ ] `Connection pool`
+- [ ] `Thrift vs GRPC` **[important]**
 
 ### Kubernetes
 
@@ -236,13 +239,13 @@ and careful about SQL injection
 -[ ] [Explain SOLID ](https://itnext.io/solid-principles-explanation-and-examples-715b975dcad4) **[important]**
 
 S: Single responsibility
-
 O: Open close principles - open for extension and close for modification
-
 L: Liskov substitution principle - replace instance of parent type by 
 instance of child type without altering `the correctness of the program`
+I: Interface segregation principle - no client should be forced to depend on methods it does not use.
+D: Dependency inversion - 
 
-Violate SOLID principle of cause program hard to extend
+`Violate SOLID principle of cause program hard to extend or easily to run wrong`
 
 
 ## Database
@@ -325,4 +328,5 @@ This index is call composite index
 16. I subtract one from here and I go here
 17. There are 4 ways to make change for 5 given the coins 1 2 and 5
 18. `This is accomplished as follows` - no duoc thuc hien nhu sau
+19. This is but one simple example of how to correct a violation of this principle, however, this situation can manifest in a broad variety of ways, and is not always easy to identify.
 
