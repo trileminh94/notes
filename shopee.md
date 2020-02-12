@@ -202,6 +202,11 @@ and careful about SQL injection
 
 - [ ] `what is http2?` **[important]**
 
+## OOP
+
+-[ ] SOLID 
+
+
 ## Database
 
 ### Indexing
