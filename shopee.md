@@ -252,6 +252,14 @@ Store hash instead of raw password, don't use MD5, use Bcrypt. Careful about SQL
 
 - [ ] `What is NIO and event loop?` **[important]**
 
+### Scribe log and data pipeline
+
+> `How scribe log works?`
+
+> `What is data pipeline?`
+
+> `Describe zalo log data pipeline?`
+
 ## OOP
 
 -[ ] [Explain SOLID ](https://itnext.io/solid-principles-explanation-and-examples-715b975dcad4) **[important]**
