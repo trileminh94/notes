@@ -184,7 +184,9 @@ TCP grab each chunk of client data with TCP header to form TCP segment and pass 
 Network layer will seperate and ecapsulate TCP segment to IP Datagram.
 
 
-- [ ] TCP proxy
+> TCP proxy
+[How to build a TCP proxy](https://robertheaton.com/2018/08/31/how-to-build-a-tcp-proxy-1/)
+
 - [ ] `terminate connections`
 - [ ] `TCP congestion control` **[important]**
 - [ ] `TCP flow control` **[important]**
