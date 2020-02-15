@@ -288,6 +288,22 @@ D: Dependency inversion - High level should not depend on low level modules. Bot
 
 - [] https://www.freecodecamp.org/news/database-indexing-at-a-glance-bb50809d48bd/
 
+### Sharding
+
+> `What is sharding? `
+
+> `How to implement sharding in MySQL?` 
+
+### Partition
+
+> `What is database partition?`
+
+> `Sample partition database in MySQL?`
+
+### Database engine
+
+> `MyISAM vs InoDB ?` **[important]**
+
 ### SQL
 - [SQL](./database/sql.md)
 - [Order of execution in SQL query](https://www.sisense.com/blog/sql-query-order-of-operations/) **[important]**
