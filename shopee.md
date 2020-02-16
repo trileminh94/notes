@@ -313,6 +313,35 @@ D: Dependency inversion - High level should not depend on low level modules. Bot
 - RIGHT JOIN
 - INNER JOIN
 - CASE WHEN
+> `HAVING VS WHERE ?`
+Having work on aggregate data while where not, 
+```
+SELECT SalesOrderID,
+         SUM(UnitPrice* OrderQty) AS TotalPrice
+FROM     Sales.SalesOrderDetail
+GROUP BY SalesOrderID
+HAVING   TotalPrice > 5000 
+```
+In the above query, HAVING can see TotalPrice while WHERE can not do that
+
+> `Multiple aggregation in single SQL query ?`
+
+> `Join multiple table`
+```
+select s.name "Student", c.name "Course"
+from student s, bridge b, course c
+where b.sid = s.sid and b.cid = c.cid 
+```
+
+```
+SELECT s.name as Student, c.name as Course 
+FROM student s
+    INNER JOIN bridge b ON s.id = b.sid
+    INNER JOIN course c ON b.cid  = c.id 
+ORDER BY s.name 
+```
+
+
 - `Complexity of SQL query`
 
 ### Concept
