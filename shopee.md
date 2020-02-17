@@ -132,6 +132,8 @@ space complexity can be O(M * N) or O(M) if we use a single demension array inst
 - [ ] `virtual memory` **[important]**
 - [ ] `Little and big endian`
 
+**When some data can not fit into the memory it will need to access disk which is the slowest part of a mordern computer**
+
 ### File system
 - [ ] file system
 
@@ -306,6 +308,12 @@ D: Dependency inversion - High level should not depend on low level modules. Bot
 
 > `MyISAM vs InoDB ?` **[important]**
 
+### Scale MySQL 
+
+> `How to scale MySQL?`
+- dont have time and dev then buy more hardware.
+- optimize performance: enable slow query log and then analyze it to optimize.
+
 ### SQL
 - [SQL](./database/sql.md)
 - [Order of execution in SQL query](https://www.sisense.com/blog/sql-query-order-of-operations/) **[important]**
@@ -313,6 +321,8 @@ D: Dependency inversion - High level should not depend on low level modules. Bot
 - RIGHT JOIN
 - INNER JOIN
 - CASE WHEN
+
+
 > `HAVING VS WHERE ?`
 Having work on aggregate data while where not, 
 ```
@@ -341,8 +351,30 @@ FROM student s
 ORDER BY s.name 
 ```
 
-
 - `Complexity of SQL query`
+
+### Advanced MySQL
+
+> `MySQL Query cached?` 
+> `Partition`
+> `Store code inside MySQL`
+> `Fulltext searching`
+
+### Replication
+
+> `Setup replicate`
+> `Replicate under the hood`
+
+### Scale MySQL - replicate, partitioning, sharding
+
+> `Scaling Up`
+> `Scaling out`
+- Functional partitioning
+- Data sharding
+- Choose a partition key
+- Multiple partition key
+- Query accross shards
+
 
 ### Concept
 - [ ] Describe database master slave process
@@ -367,7 +399,7 @@ This index is call composite index
 **is similary to how fast a car.**
 
 > `System scalability: `
-It can be understand that when you add more resource the system capability will still grow efficiently.
+**System scalability is the ability to grow system capacity by add more resource.**
 Poor scalability system will rich the limit point and can grow further.
 
 **System scalability is the degree to which you can add more cars and more lands with out slowing the traffic.**
