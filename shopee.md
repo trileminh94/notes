@@ -363,6 +363,22 @@ This index is call composite index
 ## Software design
 - [ ] API design
 
+> `System high performance`
+**is similary to how fast a car.**
+
+> `System scalability: `
+It can be understand that when you add more resource the system capability will still grow efficiently.
+Poor scalability system will rich the limit point and can grow further.
+
+**System scalability is the degree to which you can add more cars and more lands with out slowing the traffic.**
+
+> `System capabilities`
+The system's capability is the ammount of work system can perform in a given amount of time. 
+System maximum throughput is not the system's capacity. The actual system capacity is 
+the throughput system can achieve while still delivering acceptable performance.
+
+**System capacity = number of lanes * maximum safe speed**
+
 ## Behavieral
 - [ ] `talk about your career ( who do you want to be in the next 5 years at shopee ? )`
 - [ ] Why do you choose shopee?
