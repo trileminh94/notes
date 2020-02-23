@@ -228,7 +228,7 @@ Store hash instead of raw password, don't use MD5, use Bcrypt. Careful about SQL
 ### HTTPS
 
 - [ ] `How https works ?` **[important]**
-- > `Describe SSL/TLS handshake` **[important]**
+> `Describe SSL/TLS handshake` **[important]**
 
 After building a TCP connection, the client started the handshake with sending information like SSL version, cipher suites, and compression method.
 The server then checks for the highest SSL version that is supported by both of them.
