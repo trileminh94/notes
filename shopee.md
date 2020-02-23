@@ -214,18 +214,27 @@ Network layer will seperate and ecapsulate TCP segment to IP Datagram.
 Store hash instead of raw password, don't use MD5, use Bcrypt. Careful about SQL injection.
 
 > `What is RSA algorithm?`
+
 > `What is AES algorithm?`
+
 > `Symetric vs asymetric cryptography algorithm`
+
 > [symmetric-vs-asymmetric-encryption-what-are-differences](https://www.ssl2buy.com/wiki/symmetric-vs-asymmetric-encryption-what-are-differences)
+
 > `List out some symetric cryptography algorithms`
+
 > `List out some asymetric cryptography algorithms`
+
 > `What is public key cryptography?`
+
 > `How is JWT?`
+
 > `Server to server authentication?`
 
 ### HTTPS
 
 > `How https works ?` **[important]**
+
 > `Describe SSL/TLS handshake` **[important]**
 
 After building a TCP connection, the client started the handshake with sending information like SSL version, cipher suites, and compression method.
@@ -238,8 +247,11 @@ Both parties agree on a single cipher suite and generate the session keys (symme
 Finally, both client and server exchanges encrypted message to ensure that the future messages will be encrypted.
 
 > `Explain how certificate authority chain work?` **[important]**
+
 > `how certificate was issue ?` **[important]**
+
 > `Describe how a ssl certificate was verified?` **[important]**    
+
 > [What happend under the hood when you type google.com in your browser](https://stackoverflow.com/a/42154314/2803909)
 
 ### HTTP2
