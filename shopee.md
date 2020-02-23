@@ -227,7 +227,7 @@ Store hash instead of raw password, don't use MD5, use Bcrypt. Careful about SQL
 
 ### HTTPS
 
-- [ ] `How https works ?` **[important]**
+> `How https works ?` **[important]**
 > `Describe SSL/TLS handshake` **[important]**
 
 After building a TCP connection, the client started the handshake with sending information like SSL version, cipher suites, and compression method.
@@ -239,10 +239,10 @@ The server receives pre-master secret and decrypt it with the private key.
 Both parties agree on a single cipher suite and generate the session keys (symmetric keys) to encrypt and decrypt the information during an SSL session.
 Finally, both client and server exchanges encrypted message to ensure that the future messages will be encrypted.
 
-- [ ] `Explain how certificate authority chain work?` **[important]**
-- [ ] `how certificate was issue ?` **[important]**
+> `Explain how certificate authority chain work?` **[important]**
+> `how certificate was issue ?` **[important]**
 > `Describe how a ssl certificate was verified?` **[important]**    
-- [ ] [What happend under the hood when you type google.com in your browser](https://stackoverflow.com/a/42154314/2803909)
+> [What happend under the hood when you type google.com in your browser](https://stackoverflow.com/a/42154314/2803909)
 
 ### HTTP2
 
