@@ -13,6 +13,8 @@
 # Topics
 - reference: https://forthright48.com/interview-with-shopee-garena/
 
+## Tell me about your self.
+
 ## Datastructure and algorithm
 
 ### Datastructure
@@ -226,7 +228,17 @@ Store hash instead of raw password, don't use MD5, use Bcrypt. Careful about SQL
 ### HTTPS
 
 - [ ] `How https works ?` **[important]**
-- [ ] `Describe SSL/TLS handshake` **[important]**
+- > `Describe SSL/TLS handshake` **[important]**
+
+After building a TCP connection, the client started the handshake with sending information like SSL version, cipher suites, and compression method.
+The server then checks for the highest SSL version that is supported by both of them.
+The server also chooses the compression method and the cipher suite from the client’s option.
+After this exchange, the server sends a certificate (public key) to the client.
+The client confirms the certificate, creates pre-master secret for the session, and encrypts the session with the server’s public key.
+The server receives pre-master secret and decrypt it with the private key.
+Both parties agree on a single cipher suite and generate the session keys (symmetric keys) to encrypt and decrypt the information during an SSL session.
+Finally, both client and server exchanges encrypted message to ensure that the future messages will be encrypted.
+
 - [ ] `Explain how certificate authority chain work?` **[important]**
 - [ ] `how certificate was issue ?` **[important]**
 - [ ] [What happend under the hood when you type google.com in your browser](https://stackoverflow.com/a/42154314/2803909)
@@ -291,6 +303,29 @@ D: Dependency inversion - High level should not depend on low level modules. Bot
 ### Indexing
 
 - [] https://www.freecodecamp.org/news/database-indexing-at-a-glance-bb50809d48bd/
+
+### Replica
+> Properties of replica?
+- Many replicas can connect to a single master and stay in sync with it, and a
+replica can, in turn, act as a master.
+- Newer replica can sync data from old master but not in the opposite direction.
+- too many replica is not good because too much data duplicated needlessly.
+
+> How replica can help?
+- Data distribution
+- Load balancing
+- Backups
+- High availability and failover
+- Testing MySQL upgrade
+
+> How replica works?
+- Master records changes to it binary log 
+- Replica copies the master binary log to it relay log
+- The replica replay the event in the relay log, applying change to its own data.
+- The logging process happened right before the database tell the engine to commit the transaction.
+
+> How many way to implement replica?
+- Statement replica and row base replica
 
 ### Sharding
 
@@ -385,7 +420,7 @@ ORDER BY s.name
 - [ ] shared lock/exclusive lock
 - [ ] isolation
 - [ ] dirty/non-repeatable reads
-- [ ] `clustered index, primary index, unique index` ***[important]**
+- [ ] `clustered index, primary index, unique index` **[important]**
 - [ ] `composite index and how they was implemented` **[important]**
 ```
 MySQL allow you to create index on multiple columns, up to 16 columns. 
@@ -455,4 +490,7 @@ the throughput system can achieve while still delivering acceptable performance.
 18. `This is accomplished as follows` - no duoc thuc hien nhu sau
 19. This is but one simple example of how to correct a violation of this principle, however, this situation can manifest in a broad variety of ways, and is not always easy to identify.
 20. **Either of the two processes participating in a tcp connection can end the connection.**
+21. **Subtract a by b** trừ a cho b
+22. **n(n+1)/2** n time n plus 1 over 2
+23. **Cartesian product** Tích đề các
 
