@@ -248,8 +248,9 @@ Finally, both client and server exchanges encrypted message to ensure that the f
 
 > `how certificate was issue ?` **[important]**
 
-Server, domain information, issuer, expire time  + hash algorithm => hash data 
-hash data + private key of CA => signature
+`Server, domain information, issuer, expire time  + hash algorithm => hash data `
+
+`hash data + private key of CA => signature`
 
 sinature + server, domain information, issuer, expire time + server public key  tạo thành TLS/SSL certificate
 
@@ -259,8 +260,9 @@ When brower receive ssl cert, it know who is the issuer then it will use the pub
 
 it do the hash again:
 
-Server, domain information, issuer, expire time  + hash algorithm => hash data
-public key + signature => hash data 
+`Server, domain information, issuer, expire time  + hash algorithm => hash data`
+
+`public key + signature => hash data `
 
 if 2 hash data is matched then the certificate is verified.
 
