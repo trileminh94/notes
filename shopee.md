@@ -216,9 +216,7 @@ Store hash instead of raw password, don't use MD5, use Bcrypt. Careful about SQL
 > `What is RSA algorithm?`
 > `What is AES algorithm?`
 > `Symetric vs asymetric cryptography algorithm`
-
-1.[Ref](https://www.ssl2buy.com/wiki/symmetric-vs-asymmetric-encryption-what-are-differences)
-
+> [symmetric-vs-asymmetric-encryption-what-are-differences](https://www.ssl2buy.com/wiki/symmetric-vs-asymmetric-encryption-what-are-differences)
 > `List out some symetric cryptography algorithms`
 > `List out some asymetric cryptography algorithms`
 > `What is public key cryptography?`
