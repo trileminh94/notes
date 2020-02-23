@@ -241,6 +241,7 @@ Finally, both client and server exchanges encrypted message to ensure that the f
 
 - [ ] `Explain how certificate authority chain work?` **[important]**
 - [ ] `how certificate was issue ?` **[important]**
+> `Describe how a ssl certificate was verified?` **[important]**    
 - [ ] [What happend under the hood when you type google.com in your browser](https://stackoverflow.com/a/42154314/2803909)
 
 ### HTTP2
