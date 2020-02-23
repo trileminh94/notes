@@ -246,11 +246,30 @@ The server receives pre-master secret and decrypt it with the private key.
 Both parties agree on a single cipher suite and generate the session keys (symmetric keys) to encrypt and decrypt the information during an SSL session.
 Finally, both client and server exchanges encrypted message to ensure that the future messages will be encrypted.
 
-> `Explain how certificate authority chain work?` **[important]**
-
 > `how certificate was issue ?` **[important]**
 
-> `Describe how a ssl certificate was verified?` **[important]**    
+Server, domain information, issuer, expire time  + hash algorithm => hash data 
+hash data + private key of CA => signature
+
+sinature + server, domain information, issuer, expire time + server public key  tạo thành TLS/SSL certificate
+
+> `Explain how ssl certificate signature was verified` **[important]**
+
+When brower receive ssl cert, it know who is the issuer then it will use the public key of issuer which is already installed in browser
+
+it do the hash again:
+
+Server, domain information, issuer, expire time  + hash algorithm => hash data
+public key + signature => hash data 
+
+if 2 hash data is matched then the certificate is verified.
+
+
+> `Explain how certificate authority chain work?` **[important]**
+
+if cert is not issued by root CA but the intemediate CA. Then the verify process will continue with that intemediate certificate.
+If the verify process can go all the way to the root CA then the cerificate is verified.
+
 
 > [What happend under the hood when you type google.com in your browser](https://stackoverflow.com/a/42154314/2803909)
 
