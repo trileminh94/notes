@@ -94,7 +94,12 @@ move the seperator to the right one step
 time comlexity is O(M * N)
 space complexity can be O(M * N) or O(M) if we use a single demension array instead of 2 demension arrays
 ```
-- Time and Space Complexity analysis
+> Time and Space Complexity analysis
+
+Time complexity : We ask the question of how algorithm speed scale when input scale
+
+Space complexity : We ask the question of how will the space usuage scale as the input get very large  
+
 
 - `references: https://www.youtube.com/channel/UCNsGQ_oLlH89HoKd5uyoAEQ/videos`
 
@@ -525,4 +530,5 @@ the throughput system can achieve while still delivering acceptable performance.
 21. **Subtract a by b** trừ a cho b
 22. **n(n+1)/2** n time n plus 1 over 2
 23. **Cartesian product** Tích đề các
-
+24. **What do we need to power 2 by to get 16?** 
+25. **I will get into doing something**
