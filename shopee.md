@@ -98,8 +98,9 @@ space complexity can be O(M * N) or O(M) if we use a single demension array inst
 
 Time complexity : We ask the question of how algorithm speed scale when input scale
 
-Space complexity : We ask the question of how will the space usuage scale as the input get very large  
+Space complexity : We ask the question of how will the space usuage scale as the input get very large
 
+`You should explicitly ask should I include that in the space complexity of space that recursion take up on the call`
 
 - `references: https://www.youtube.com/channel/UCNsGQ_oLlH89HoKd5uyoAEQ/videos`
 
