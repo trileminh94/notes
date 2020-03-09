@@ -82,6 +82,13 @@ loop n time, each time find the smallest element in the unsorted part and then
 move the seperator to the right one step
 ```
 - quick sort
+
+in the best case all the element is equal -> O(n)
+
+in the wost case the array is sorted -> O(n2)
+
+average O(n Log n)
+
 - merge sort
 - heap sort
 - device and conquer
@@ -94,13 +101,7 @@ move the seperator to the right one step
 time comlexity is O(M * N)
 space complexity can be O(M * N) or O(M) if we use a single demension array instead of 2 demension arrays
 ```
-> Time and Space Complexity analysis
-
-Time complexity : We ask the question of how algorithm speed scale when input scale
-
-Space complexity : We ask the question of how will the space usuage scale as the input get very large
-
-`You should explicitly ask should I include that in the space complexity of space that recursion take up on the call`
+- Time and Space Complexity analysis
 
 - `references: https://www.youtube.com/channel/UCNsGQ_oLlH89HoKd5uyoAEQ/videos`
 
@@ -126,6 +127,9 @@ Space complexity : We ask the question of how will the space usuage scale as the
 - given a list of number, find the first K minimum number
 
 ## Operating system
+
+[Operating system three easy peieces](http://pages.cs.wisc.edu/~remzi/OSTEP/)
+
 
 ### Process
 - [ ] `process` **[important]**
@@ -342,6 +346,15 @@ D: Dependency inversion - High level should not depend on low level modules. Bot
 
 - [] https://www.freecodecamp.org/news/database-indexing-at-a-glance-bb50809d48bd/
 
+> Note to utilize mysql index
+- Column must be isolation, it mean that the column must not be part of an expression or be inside a function call in query
+- Prefix index and selective index: the good thing is to choose the long enough to give good selective and short enough to use less space
+- Selective = cardinality / row -> the greater selective the better to chose (choose the prefix give the selective closest to the selective of using full column)
+- Selective of unique index is 1 -> it is very good
+- key and index in mysql is the same
+
+
+
 ### Replica
 > Properties of replica?
 - Many replicas can connect to a single master and stay in sync with it, and a
@@ -368,6 +381,27 @@ replica can, in turn, act as a master.
 ### Sharding
 
 > `What is sharding? `
+
+Sharding is the process of breaking up large tables into smaller chunks called shards that are 
+spread across multiple server.
+
+> Pros and cons ?
+
+Can easier to scale and scale more efficiently. 
+Network of smaller and cheaper server is more cost effective than single big server in long term. 
+Sharding can increase total cluster storage capacity, speed up processing, and offer higher avalability at lower cost.
+
+Database does not support so we need to implement it in application layer. Application must have additional sharding logic to
+know exactly where data located and how to fetch it.
+Manage are more complicated. Now any action on database like backup, restore, alter schema, migration must be carefully coordinate to ensure all shard have the same copy.
+
+> All sharding architecture:
+
+**Hash-based sharding**
+
+**Range-based sharding**
+
+**Geo-based sharding**
 
 > `How to implement sharding in MySQL?` 
 
@@ -432,6 +466,11 @@ ORDER BY s.name
 > `Partition`
 > `Store code inside MySQL`
 > `Fulltext searching`
+> `Optimize SQL query`
+
+- Dont use select * , only select neccessary field
+- Dont use where to join, use inner join specificly
+-
 
 ### Replication
 
@@ -463,6 +502,16 @@ ORDER BY s.name
 ```
 MySQL allow you to create index on multiple columns, up to 16 columns. 
 This index is call composite index
+
+MySQL create composite index by concat value of column in the order of column in index and then use it as key
+
+Beside of using multiple column index you can add an extra column as long as that column is short, reasonably unique and be indexed
+
+`
+SELECT * FROM tbl_name
+  WHERE hash_col=MD5(CONCAT(val1,val2))
+    AND col1=val1 AND col2=val2;
+`
 ```
 
 ## Software design
@@ -506,6 +555,30 @@ the throughput system can achieve while still delivering acceptable performance.
 - [ ] Why do I want to work here?
 
 
+> How to ensure your final round interview lands you the job ?
+
+- The hiring manager does not make the final round interview invitation for the fun of it.
+- The final round interview is to either gauge your cultural fit with the team or compare you with another qualified finalist. 
+- You can't rely on people to make the right assumption about you, so it would be better for you to speak it out for them. ( but not too much )
+- You should show that you are very self awareness. You acknowledge your weakness and showing the concrete steps you have taken to bridge the gap.
+- Don't be afraid to ask questions.
+- In conclusion, final round interview is about balance: your strength and your weakness, asking and answering question, personality and profesionalism.
+
+> Question to ask interviewer in the interview
+
+- These questions are to show the level of your interest in the job, how much research you have done about the role and the organization.
+- The question in the final round interview should show your in-depth knowledge of the industy, the role, the orgainization. So your question should reflect this high level of preparedness and research.
+
+
+> Some sample question to ask in the final round interview 
+
+- What kind of person do you think makes the ideal colleague here? 
+  => show the interviewer that you already concern about being a good fit into the team.
+  => give you an opertunities to reiterate about your personality, character trait, soft skill that make you not just an acceptable employee who can get the job done but a pleasant coworker who the other team members will
+     look forward to spending time with every day.
+
+- What is the onboarding process look like?
+
 ## Common phrases use to answer common question
 
 1. Index will benefit your query
@@ -533,3 +606,8 @@ the throughput system can achieve while still delivering acceptable performance.
 23. **Cartesian product** Tích đề các
 24. **What do we need to power 2 by to get 16?** 
 25. **I will get into doing something**
+26. Hello, can you here me? can you here me very well?
+27. So do I, So is it, So is she, Me too 
+28. Sorry, I just don't get it.
+29. In the case the array is sorted then in each iteration of quicksort the array only shrink by 1 element 
+30. Using where to join will create cartesian product or cross join -> all possible combinations of variables are created. 
