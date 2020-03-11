@@ -522,6 +522,8 @@ SELECT * FROM tbl_name
 - https://www.freecodecamp.org/news/how-to-system-design-dda63ed27e26/
 - https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying
 - https://www.educative.io/courses/grokking-the-system-design-interview/3j6NnJrpp5p
+- https://github.com/donnemartin/system-design-primer
+- https://www.quora.com/What-are-the-best-resources-to-learn-how-to-build-scalable-large-software-systems
 
 - [ ] API design
 
