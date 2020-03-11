@@ -12,6 +12,7 @@
 
 # Topics
 - reference: https://forthright48.com/interview-with-shopee-garena/
+- Fundamental: https://www.cs.rutgers.edu/~pxk/416/
 
 ## Tell me about your self.
 
@@ -515,6 +516,13 @@ SELECT * FROM tbl_name
 ```
 
 ## Software design
+
+> Docs
+
+- https://www.freecodecamp.org/news/how-to-system-design-dda63ed27e26/
+- https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying
+- https://www.educative.io/courses/grokking-the-system-design-interview/3j6NnJrpp5p
+
 - [ ] API design
 
 > `System high performance`
