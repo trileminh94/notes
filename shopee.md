@@ -524,6 +524,10 @@ SELECT * FROM tbl_name
 - https://www.educative.io/courses/grokking-the-system-design-interview/3j6NnJrpp5p
 - https://github.com/donnemartin/system-design-primer
 - https://www.quora.com/What-are-the-best-resources-to-learn-how-to-build-scalable-large-software-systems
+- https://medium.com/@jeeyoungk/how-sharding-works-b4dec46b3f6
+- https://medium.com/techlog/chord-building-a-dht-distributed-hash-table-in-golang-67c3ce17417b
+- https://medium.com/better-programming/an-overview-to-docker-architecture-15407c482c52
+- https://medium.com/pinterest-engineering/sharding-pinterest-how-we-scaled-our-mysql-fleet-3f341e96ca6f
 
 - [ ] API design
 
@@ -542,6 +546,19 @@ System maximum throughput is not the system's capacity. The actual system capaci
 the throughput system can achieve while still delivering acceptable performance.
 
 **System capacity = number of lanes * maximum safe speed**
+
+> `Consistent hashing - How do you handle case when a server crash or added in system like sharding cache` 
+
+In normal case you usually use `hash(key) % num_server` to locate where to store data (DB, cache), but what happend then a server die,
+in that case, the original hash result will not correct any more, all the result will change and cause a lot of cachem miss and then will 
+very well degrade performance and possibly crash the original server(DB). Use consistent hashing to prevent this
+[Consistent hashing](https://www.toptal.com/big-data/consistent-hashing),
+
+v1 = hash(serverId)
+
+v2 = hash(objectId)
+
+server = choose closest v1 with v2 
 
 ## Behavieral
 - [ ] `talk about your career ( who do you want to be in the next 5 years at shopee ? )`
