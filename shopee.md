@@ -534,6 +534,7 @@ SELECT * FROM tbl_name
 > `System high performance`
 **is similary to how fast a car.**
 
+
 > `System scalability: `
 **System scalability is the ability to grow system capacity by add more resource.**
 Poor scalability system will rich the limit point and can grow further.
@@ -547,6 +548,8 @@ the throughput system can achieve while still delivering acceptable performance.
 
 **System capacity = number of lanes * maximum safe speed**
 
+### distributed system
+
 > `Consistent hashing - How do you handle case when a server crash or added in system like sharding cache` 
 
 In normal case you usually use `hash(key) % num_server` to locate where to store data (DB, cache), but what happend then a server die,
@@ -559,6 +562,21 @@ v1 = hash(serverId)
 v2 = hash(objectId)
 
 server = choose closest v1 with v2 
+
+
+> `Presharding`
+
+Redis footprint is quite small, a spare instance uses 1MB of memory. So you can start with a lot of instances from start. Run multiple redis instances in single server.
+Then if you need more data storage. You need more redis server. You just need to move redis instance to another server by using redis replacation ( minimal or zero downtime ).
+[redis partitioning](https://redis.io/topics/partitioning)
+
+> `Master election`
+
+> `Caching stempede`
+
+> `Sharding strategy`
+
+> `Distributed lock`
 
 ## Behavieral
 - [ ] `talk about your career ( who do you want to be in the next 5 years at shopee ? )`
